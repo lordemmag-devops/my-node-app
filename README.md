@@ -1,3 +1,4 @@
+
 # DevOps Learning Project: Node.js App on Google Cloud Run
 
 This project demonstrates a DevOps workflow by deploying a simple Node.js application to Google Cloud Platform (GCP) Cloud Run using Docker, Terraform, and GitHub Actions. It’s designed for learning key DevOps concepts like CI/CD, infrastructure as code (IaC), and containerization.
@@ -23,8 +24,8 @@ This project demonstrates a DevOps workflow by deploying a simple Node.js applic
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
-cd <your-repo-name>
+git clone <repo-url>
+cd <repo-name>
 ```
 
 ### 2. Set Up Google Cloud

@@ -45,20 +45,20 @@ In your GitHub repository, go to Settings > Secrets and variables > Actions > Ne
 - `GCP_SA_KEY`: The JSON key for your service account (base64-encoded: `base64 service-account-key.json`).
 - `GCP_REGION`: Your preferred region (e.g., `us-central1`).
 
-### 4. Initialize Terraform
-```bash
-cd terraform
-terraform init
-terraform apply -var="project_id=$GCP_PROJECT_ID" -var="region=$GCP_REGION"
-```
-
-### 5. Local Testing
+### 4. Local Testing
 1. Build and run the Docker container locally:
    ```bash
    docker build -t my-node-app .
    docker run -p 8080:8080 my-node-app
    ```
 2. Open `http://localhost:8080` to see "Hello, DevOps!".
+
+### 5. Initialize Terraform
+```bash
+cd terraform
+terraform init
+terraform apply -var="project_id=$GCP_PROJECT_ID" -var="region=$GCP_REGION"
+```
 
 ### 6. Push to GitHub
 Commit and push changes to trigger the GitHub Actions pipeline:

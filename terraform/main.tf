@@ -1,7 +1,8 @@
 
 provider "google" {
-  project = var.project_id
-  region  = var.region
+  #credentials = base64decode(var.GCP_CREDENTIALS)
+  project     = var.project_id
+  region      = var.region
 }
 
 resource "google_artifact_registry_repository" "app_repo" {

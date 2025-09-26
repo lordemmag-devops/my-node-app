@@ -57,6 +57,8 @@ In your GitHub repository, go to Settings > Secrets and variables > Actions > Ne
 ```bash
 cd terraform
 terraform init
+export GCP_PROJECT_ID="eg., my-cloud-project-12345"
+export GCP_REGION="eg., europe-west2"
 terraform apply -var="project_id=$GCP_PROJECT_ID" -var="region=$GCP_REGION"
 ```
 
@@ -65,7 +67,7 @@ Commit and push changes to trigger the GitHub Actions pipeline:
 ```bash
 git add .
 git commit -m "Initial commit"
-git push origin main
+git push origin master
 ```
 
 ## CI/CD Pipeline
